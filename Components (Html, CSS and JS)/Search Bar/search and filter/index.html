@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter card</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="searchBar">
+            <input type="search" id="search-input" placeholder="Search:" />
+            <button id="search">Search</button>
+        </div>
+
+        <ul class="categoryBtn">
+            <li><button class="category active">All</button></li>
+            <li><button class="category">Topwear</button></li>
+            <li><button class="category">Bottomwear</button></li>
+            <li><button class="category">Jacket</button></li>
+            <li><button class="category">Watch</button></li>
+        </ul>
+
+        <div class="cardContainer">
+            <template id="card-template">
+                <div class="card">
+                    <div class="card-img">
+                    </div>
+                    <img class="product-image" src="images/black-leather-jacket.jpg" height="200">
+                    <p class="info">Black Leather Jacket</p>
+                    <div class="price">$99</div>
+                </div>
+            </template>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+extends base.pug
+block style 
+  style
+    include ../static/style.css
+
+block scripts
+  script(src='../static/index.js')
+
+block content
+  section#intro_section
+    p Welcome to Solo Dance Academy
+    p Eat Sleep and Dance
+
+  section#mission_section
+    p
+    h2 Our Mission
+    p
+    .card
+      h3 Dance Perfection
+      .card-box
+        .card-img
+          img(src="../static/d1.png", alt)
+        .card-content
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum deleniti iusto officia tempore dolorem.
+    .card
+      h3 Dance as you like
+      .card-box
+        .card-img
+          img(src="../static/d3.png", alt)
+        .card-content
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum deleniti iusto officia tempore dolorem.
+    .card
+      h3 Export Teaching
+      .card-box
+        .card-img
+          img(src="../static/logo.png", alt)
+        .card-content
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum deleniti iusto officia tempore dolorem.
+
+  section#sponser_section
+    h2 Our Sponser
+    #sponser_box
+      img(src="../static/logo1.png", alt)
+      img(src="../static/logo2.png", alt)
+      img(src="../static/logo3.png", alt)
+      img(src="../static/logo4.png", alt)

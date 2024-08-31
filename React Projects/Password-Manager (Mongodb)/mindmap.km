@@ -1,0 +1,173 @@
+{
+    "root": {
+        "data": {
+            "id": "d0778bwwdzs0",
+            "created": 1711813470262,
+            "text": "Main Working Principle of this app"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d077bxbgxj40",
+                    "created": 1711813751948,
+                    "text": "Input",
+                    "expandState": "expand",
+                    "note": "When we input, handlechange() will occur because of onchange attribute."
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d077csc38nk0",
+                            "created": 1711813819466,
+                            "text": "handlechange()",
+                            "layout_right_offset": {
+                                "x": -25.999999612569695,
+                                "y": 74.9999988824128
+                            },
+                            "note": "handlechange() will sent input data to form as form format"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d077drg4gl40",
+                                    "created": 1711813895897,
+                                    "text": "Form",
+                                    "layout_right_offset": {
+                                        "x": -26.999999597668648,
+                                        "y": 89.99999865889555
+                                    },
+                                    "note": "Form is a state that kept data in the form of object , received input data from handlechange() and store them according to schema."
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d077d6cbbco0",
+                                            "created": 1711813849954,
+                                            "text": "passwordArray",
+                                            "layout_right_offset": {
+                                                "x": -27.99999958276726,
+                                                "y": 89.99999865889555
+                                            },
+                                            "note": "passwordArray is a state that kept data in the form of Array. Fetch form data and kept it by inserting id "
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07fn7ko0c80",
+                                                    "created": 1711837205157,
+                                                    "text": "Table",
+                                                    "layout_right_offset": {
+                                                        "x": -31.999999523162842,
+                                                        "y": 45.999999314546415
+                                                    },
+                                                    "note": "Immediately fetch each data from passwordArray then display those data in table."
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "d07fl2j9ho00",
+                                            "created": 1711837037460,
+                                            "text": "Server",
+                                            "layout_right_offset": {
+                                                "x": -178.99999733269192,
+                                                "y": 38.99999941885454
+                                            }
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "d07fng0cveg0",
+                                                    "created": 1711837223520,
+                                                    "text": "DB",
+                                                    "layout_right_offset": {
+                                                        "x": -147.99999779462814,
+                                                        "y": 40.99999938905245
+                                                    }
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "d07fjbodtm80",
+                    "created": 1711836900632,
+                    "text": "When reload",
+                    "layout_mind_offset": {
+                        "x": 43.99999934434908,
+                        "y": 3.9999999403953552
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "d07fj96t3hk0",
+                            "created": 1711836895216,
+                            "text": "Server",
+                            "layout_left_offset": {
+                                "x": -45.999999314546585,
+                                "y": 115.99999827146519
+                            },
+                            "note": "getPassword() will fetch data from server and kept in passwordArray, useEffect() hook run getPassword() on reload "
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "d07fjesgh1c0",
+                                    "created": 1711836907409,
+                                    "text": "DB",
+                                    "layout_right_offset": {
+                                        "x": -37.999999433755875,
+                                        "y": 103.99999845027924
+                                    },
+                                    "layout_left_offset": {
+                                        "x": 11.999999821186009,
+                                        "y": -0.9999999850987535
+                                    }
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "d07g649tdyo0",
+                                    "created": 1711838686890,
+                                    "text": "passwordArray",
+                                    "layout_left_offset": {
+                                        "x": 234.99999649822723,
+                                        "y": 42.99999935925001
+                                    }
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "d07g6gc5mn40",
+                                            "created": 1711838713153,
+                                            "text": "Table",
+                                            "layout_left_offset": {
+                                                "x": 218.9999967366457,
+                                                "y": 39.99999940395344
+                                            }
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

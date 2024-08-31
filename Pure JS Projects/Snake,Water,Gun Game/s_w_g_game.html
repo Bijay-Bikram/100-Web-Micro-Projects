@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake,Water and Gun</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    let option = [
+        'Snake',
+        'Water',
+        'Gun'
+    ]
+    let lose = 0;
+    let win = 0;
+    let random = Math.floor(Math.random() * option.length);
+    let computer = option[random];
+    let repeat = true;
+    while (repeat) {
+        for (let i = 0; i < 3; i++) {
+            user = prompt('Choice Snake, Water or Gun.');
+            if (computer == 'Snake' && user == 'Gun') {
+                alert('You Win.');
+                win = win + 1;
+            }
+            else if (computer == 'Gun' && user == 'Snake') {
+                alert('You lose');
+                lose = lose + 1;
+            }   //Gun vs Snake
+
+            else if (computer == 'Gun' && user == 'Water') {
+                alert('You win');
+                win = win + 1;
+
+            }
+
+            else if (computer == 'Water' && user == 'Gun') {
+                alert('You lose');
+                lose = lose + 1;
+
+            }   //Gun vs water
+
+            else if (computer == 'Snake' && user == 'Water') {
+                alert('You lose');
+                lose = lose + 1;
+
+            }
+            else if (computer == 'Water' && user == 'Snake') {
+                alert('You win');
+                win = win + 1;
+
+            }   //Snake vs Water
+
+            else {
+                alert('Draw match');
+            }
+        }
+        if (win > lose) {
+            alert(`You have won the match with score ${win}`);
+        }
+        else {
+            alert(`You losed the match, score ${win}`);
+        }
+        repeat = confirm('Will you try again?');
+    }
+</script>

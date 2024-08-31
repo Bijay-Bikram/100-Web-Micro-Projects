@@ -1,0 +1,94 @@
+ .container {
+     width: 80vw;
+     height: 80vh;
+     background: aquamarine;
+     display: flex;
+     align-items: flex-end;
+ }
+
+ .ball {
+     width: 100px;
+     height: 100px;
+     background: linear-gradient(to right, red, rgb(153, 240, 12));
+     border-radius: 50%;
+     animation-name: anime;
+     animation-duration: 10s;
+     animation-delay: 1s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+     animation-fill-mode: forwards;
+     animation-direction: normal;
+ }
+
+ @keyframes anime {
+     0% {
+         transform: translateX(0);
+         transform: translateY(0);
+     }
+
+     10% {
+         transform: translateX(110px) translateY(-400px) rotate(27deg);
+
+
+     }
+
+     15% {
+         transform: translateX(220px) translateY(-0px) rotate(54deg);
+
+     }
+
+     20% {
+         transform: translateX(330px) translateY(-300px) rotate(81deg);
+
+     }
+
+     25% {
+         transform: translateX(440px) translateY(-0px) rotate(108deg);
+
+
+     }
+
+     30% {
+         transform: translateX(550px) translateY(-200px) rotate(135deg);
+
+     }
+
+     35% {
+         transform: translateX(660px) translateY(-0px) rotate(162deg);
+
+     }
+
+     40% {
+         transform: translateX(770px) translateY(-100px) rotate(189deg);
+
+     }
+
+     45% {
+         transform: translateX(880px) translateY(-0px) rotate(216deg);
+
+     }
+
+     50% {
+         transform: translateX(990px) translateY(-50px) rotate(243deg);
+
+     }
+
+     55% {
+         transform: translateX(1000px) translateY(-0px) rotate(270deg);
+
+     }
+
+     60% {
+         transform: translateX(1010x) translateY(-25px) rotate(297deg);
+
+     }
+
+     65% {
+         transform: translateX(1050px) translateY(-0px) rotate(324deg);
+
+     }
+
+     100% {
+         transform: translateX(73vw) translateY(-0px) rotate(360deg);
+     }
+ }

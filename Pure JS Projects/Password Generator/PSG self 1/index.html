@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: plum;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            border-radius: 9px;
+            background: #00000038;
+            width: 500px;
+            border: 2px solid red;
+            margin: 200px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container h2 {
+            color: antiquewhite;
+            margin: 8px 10px;
+            font-size: 30px;
+            user-select: none;
+        }
+
+        .display {
+            background: white;
+            width: 70%;
+            margin: 20px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+
+        }
+
+        .display input {
+            width: 85%;
+            font-size: 20px;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            cursor: pointer;
+            background: rgba(255, 0, 0, 0.598);
+            color: rgb(200, 176, 176);
+            border-radius: 8px;
+            font-size: 20px;
+            margin-bottom: 10px;
+            padding: 5px 8px;
+        }
+
+        #copy {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Password Generator
+        </h2>
+        <div class="display">
+            <input type="text" id="password" placeholder="Password">
+            <div id="copy" onclick="tc()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 22L9 9L22 9.00846L22 22H9Z" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M17 9V2.00977L2 2L2 17H9" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </div>
+
+
+        </div>
+        <button onclick="psg()">Generate</button>
+    </div>
+
+</body>
+<script>
+    let ps = document.getElementById('password')
+    let len = 10;
+
+    const ucase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    const lcase = "abcdefghijklmnopqrstuvwxyz"
+    const num = "1234567890"
+    const sym = "!@#%$%&()_-=+[{}]"
+    const allC = ucase + lcase + num + sym;
+
+    function psg() {
+        let pass = " "
+
+        pass += ucase[Math.floor(Math.random() * ucase.length)]
+        pass += lcase[Math.floor(Math.random() * lcase.length)]
+        pass += num[Math.floor(Math.random() * num.length)]
+        pass += sym[Math.floor(Math.random() * sym.length)]
+
+        while (pass.length < len) {
+            pass += allC[Math.floor(Math.random() * allC.length)]
+
+        }
+        ps.value = pass;
+    }
+    function tc(){
+        password.select()
+        document.execCommand('copy')
+    }
+</script>
+
+</html>

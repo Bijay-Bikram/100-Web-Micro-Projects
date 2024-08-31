@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaxing image Gallery</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .container>img {
+        transition: scale 360ms ease, opacity 360ms linear;
+    }
+
+    .container:has(img:hover) img:not(:hover) {
+        scale: 0.8;
+        opacity: 0.5;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <picture>
+            <source srcset="https://picsum.photos/200" class="image">
+            <img src="./images/img1.png" alt="image" class="image">
+        </picture>
+
+        <picture>
+            <source srcset="https://picsum.photos/201" class="image">
+            <img src="./images/img2.png" alt="Image" class="image">
+        </picture>
+
+        <picture>
+            <source srcset="https://picsum.photos/202" class="image">
+            <img src="images/img3.png" alt="Image" class="image">
+        </picture>
+
+        <picture>
+            <source srcset="https://picsum.photos/203" class="image">
+            <img src="./images/img4.png" alt="Image" class="image">
+        </picture>
+
+        <picture>
+            <source srcset="https://picsum.photos/204" class="image">
+            <img src="images/img5.png" alt="Image" class="image">
+        </picture>
+
+        <picture>
+            <source srcset="https://picsum.photos/205" class="image">
+            <img src="./images/img6.png" alt="Image" class="image">
+        </picture>
+
+        <picture>
+            <source srcset="https://picsum.photos/206" class="image">
+            <img src="./images/img7.png" alt="Image" class="image">
+        </picture>
+
+        <picture>
+            <source srcset="https://picsum.photos/207" class="image">
+            <img src="./images/img8.png" alt="Image" class="image">
+        </picture>
+
+    </div>
+</body>
+
+</html>

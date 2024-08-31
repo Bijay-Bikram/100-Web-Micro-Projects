@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #121212;
+}
+
+/* Change the theme to dark mode when this class is added to the body */
+.dark-theme {
+    --primary-color: #121212;
+    --secondary-color: #fff;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px;
+    background-color: #48f7f4;
+}
+
+nav .logo {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-size: 16px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-links li a:hover {
+    border-bottom: 2px solid blueviolet;
+}
+
+.theme {
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    top: 25px;
+}
+
+.para {
+    background: #6bf06440;
+    color: var(--secondary-color);
+    padding: 1rem;
+    width: 800px;
+    max-width: 90%;
+    margin: 10vh auto;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .mobBar {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 40px 0 10px;
+        width: 400px;
+        max-width: 70%;
+        height: 100%;
+        text-align: center;
+        background-color: #48f7f4;
+    }
+
+    .nav-links header {
+        padding: 6px 0 10px;
+        border-bottom: 1px solid #a3a3a3;
+    }
+}

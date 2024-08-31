@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(92, 92, 172);
+}
+
+body,
+.quote-input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    background-color: #3f3fc3;
+    padding: 1rem;
+    border-radius: 13px;
+    width: 700px;
+    max-width: 90%;
+    color: white;
+}
+
+.timer {
+    position: absolute;
+    top: 3rem;
+    color: #3f3fc3;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.quote-display {
+    margin-bottom: 1rem;
+    /* Making exact similar position with input text */
+    margin-left: calc(1rem + 2px);
+    margin-right: calc(1rem + 2px);
+}
+
+.quote-input {
+    background: transparent;
+    color: rgb(223, 214, 214);
+    outline: none;
+    border: 2px solid #2e2e8a;
+    border-radius: .5rem;
+    width: 100%;
+    margin: auto;
+    padding: .5rem 1rem;
+    min-height: 8rem;
+    resize: none;
+    font-size: 1rem;
+}
+
+.quote-input:focus {
+    border-color: rgb(0, 0, 198);
+}
+
+.correct {
+    color: rgb(13, 193, 13);
+}
+
+.incorrect {
+    color: rgb(242, 28, 28);
+    text-decoration: underline;
+}

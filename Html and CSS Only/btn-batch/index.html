@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Badge</title>
+</head>
+<style>
+    body {
+        margin: 25px;
+
+    }
+
+    .button-wrapper {
+        position: relative;
+        font-size: 16px;
+        /* margin-top: 40px; */
+        margin: 50px auto;
+        width: fit-content;
+    }
+
+    .btn {
+        padding: 10px 16px;
+        border-radius: 6px;
+        border: none;
+        outline: none;
+        background: rgb(239, 242, 242);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+
+    .button-badge {
+        position: absolute;
+        top: -14px;
+        left: calc(100% - 10px);
+        text-wrap: nowrap;
+        /* To make stable in a single line which is probably ideal for
+Badges and things */
+        color: #ffffff;
+        background: rgba(8, 178, 8, 0.86);
+        padding: 4px 6px;
+        border-radius: 4px;
+        font-family: sans-serif;
+        font-size: 0.65em;
+        font-weight: bold;
+        user-select: none;
+    }
+</style>
+
+<body>
+    <div class="button-wrapper">
+        <button type="button" class="btn">Get Started</button>
+        <span class="button-badge">New</span>
+    </div>
+</body>
+
+</html>
+
+<!-- Note:position, text-wrap:nowrap; in .button-bade -->

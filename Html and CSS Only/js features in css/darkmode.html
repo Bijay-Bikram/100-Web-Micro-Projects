@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+</head>
+<style>
+    * {
+        font-family: "poppins";
+    }
+
+    .box {
+        border: 2px solid rgba(92, 92, 92, 0.352);
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .box:has(div) {
+        background-color: red;
+    }
+
+    body:has(.dark-mode-toggle:checked) {
+        background-color: black;
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+            <p class="p1">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <div class="box">
+            <div>
+                <p class="p2">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <input class="dark-mode-toggle" type="checkbox" ch> Dark Mode
+        </div>
+
+    </div>
+</body>
+
+</html>

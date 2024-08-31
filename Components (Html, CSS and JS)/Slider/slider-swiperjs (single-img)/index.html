@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider on Click</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+
+            <div class="slide swiper-slide">
+                <img src="img/img1.jpg" alt="Img" class="image">
+                <div class="image-data">
+                    <span class="text">Enjoy the finest coffee drinks.</span>
+                    <h2>Enjoy Our Exclusive <br>
+                        Coffee and Cocktails
+                    </h2>
+                    <a href="#" class="button">About Us</a>
+                </div>
+            </div>
+
+            <div class="slide swiper-slide">
+                <img src="img/img2.jpg" alt="Img" class="image">
+                <div class="image-data">
+                    <span class="text">Making Our coffee with lover..</span>
+                    <h2>Alluring and Fragrant <br> Coffee Aroma
+                    </h2>
+                    <a href="#" class="button">About Us</a>
+                </div>
+            </div>
+
+            <div class="slide swiper-slide">
+                <img src="img/img3.jpg" alt="Img" class="image">
+                <div class="image-data">
+                    <span class="text">We really like what we do..</span>
+                    <h2>Coffee Beans with a <br> Perfect Aroma
+                    </h2>
+                    <a href="#" class="button">About Us</a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            // spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar with Array</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="search-container">
+        <label for="search">Search Components</label>
+        <input type="search" id="search" data-search>
+    </div>
+
+    <div class="component-cards" data-component-cards-container>
+        <template data-component-template id="temp">
+            <div class="card">
+                <div class="header" data-header>Navbar</div>
+                <div class="body" data-body>navbar with dropdown menu</div>
+            </div>
+        </template>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

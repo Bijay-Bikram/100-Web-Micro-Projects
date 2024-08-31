@@ -1,0 +1,67 @@
+doctype html 
+html 
+  head 
+  style 
+    include ../static/style.css
+body  
+
+nav#navbar
+  div#logo
+    img(src="../static/logo.png", alt)
+    p SDA
+  ul
+    li
+      a(href="/") Home
+    li
+      a(href="/") Service
+    li
+      a(href="/") Class info
+    li
+      a(href="/") About
+    li
+      a(href="/") Contact
+
+section#intro_section
+  p Welcome to Solo Dance Academy
+  p Eat Sleep and Dance
+
+section#mission_section
+  p
+  h2 Our Mission
+  p
+  .card
+    h3 Dance Perfection
+    .card-box
+      .card-img
+        img(src="../static/d1.png", alt)
+      .card-content
+        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum deleniti iusto officia tempore dolorem.
+  .card
+    h3 Dance as you like
+    .card-box
+      .card-img
+        img(src="../static/d3.png", alt)
+      .card-content
+        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum deleniti iusto officia tempore dolorem.
+  .card
+    h3 Export Teaching
+    .card-box
+      .card-img
+        img(src="../static/logo.png", alt)
+      .card-content
+        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum deleniti iusto officia tempore dolorem.
+
+section#sponser_section
+  h2 Our Sponser
+  #sponser_box
+    img(src="../static/logo1.png", alt)
+    img(src="../static/logo2.png", alt)
+    img(src="../static/logo3.png", alt)
+    img(src="../static/logo4.png", alt)
+
+footer#footer
+  p#cr Copyright © 2023 SoloDanceAcademy.com All right | reserve
+
+script
+  include  ../static/index.js
+

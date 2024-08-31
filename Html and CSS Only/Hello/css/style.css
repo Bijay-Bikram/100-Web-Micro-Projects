@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "calibri";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Main section */
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Left Section  */
+#left {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    border: 2px solid grey;
+    background: rgb(92, 89, 89);
+}
+
+#navbar {
+    margin: 20px 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background: rgb(161, 161, 145); */
+}
+#navr{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    
+}
+#navr a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+}
+#navr i{
+    color: rgb(48, 48, 228);
+    width: 100px;
+}
+#navr i .ri-twitter-fill{
+    width: 200px;
+}
+#left #centertext{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    left: 24%;
+
+}
+#left #centertext h1{
+    font-size: 80px;
+}
+#left #centertext a{
+    width: fit-content;
+    font-size: 20px;
+text-decoration: none;
+color: #000;
+border-bottom: 2px solid grey;
+margin-bottom: 30px;
+
+}
+#left #centertext p{
+    margin-bottom: 20px;
+}
+
+/* Right Section */
+#right {
+    width: 60%;
+    height: 100%;
+    /* background: green; */
+}
+
+#rtop {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    /* background: red; */
+}
+
+#rbottom {
+    border: 2px solid gray;
+
+   
+    width: 100%;
+    height: 50%;
+    background: url('../img/p3.jpg');
+    background-position:  top;
+    background-size: cover;
+}
+
+#rtop_left {
+    border: 2px solid gray;
+
+    width: 55%;
+    height: 100%;
+    background-image: url('../img/p1.jpeg');
+    background-position:  center;
+    background-size: cover;
+}
+
+.rtopright {
+    border: 2px solid gray;
+    width: 45%;
+    height: 100%;
+    background-image: url('../img/p2.jpeg');
+    background-position:  center;
+    background-size: cover;
+
+}
+/* Responsive Section */
+@media(max-width:500px){
+    .main{
+        flex-direction: column;
+    }
+    #left{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        /* margin-bottom: 20px; */
+    }
+    #right{
+        position: absolute;
+        top: 460px;
+        width: 100%;
+        height: 100%;
+    }
+    
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random color generator</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        gap: 15px;
+    }
+
+    .box {
+        height: 45px;
+        width: 45px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        text-align: center;
+        color: g;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+    </div>
+</body>
+<script>
+    let bg = ['white', 'black', 'cyan', 'aqua', 'greenyellow', 'grey']
+    let color = ['red', 'green', 'blue', 'gold', 'pink', 'yellow']
+
+    let rbg = Math.floor(Math.random() * bg.length)
+    let rc = Math.floor(Math.random() * color.length)
+
+    document.querySelectorAll('.box').forEach(e => {
+        e.style.background = bg[rbg];
+        e.style.color = color[rc]
+        
+        rbg = Math.floor(Math.random() * bg.length)
+        rc = Math.floor(Math.random() * color.length)
+    })
+</script>
+
+</html>
+<!--<script src="./test.js"></script> -->

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaxing image Gallery</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .5rem;
+        width: 100vw;
+        margin: 1rem 0;
+    }
+
+    .container>img {
+        scale: .8;
+        transition: scale 360ms ease, opacity 360ms linear;
+    }
+
+    .container img:hover {
+        scale: 1;
+    }
+
+    .container:has(img:hover) img:not(:hover) {
+        opacity: 0.6;
+        filter: blur(3px);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <img src="https://picsum.photos/200 " alt="Image" class="image">
+        <img src="https://picsum.photos/201 " alt="Image" class="image">
+        <img src="https://picsum.photos/202 " alt="Image" class="image">
+        <img src="https://picsum.photos/203 " alt="Image" class="image">
+        <img src="https://picsum.photos/204 " alt="Image" class="image">
+        <img src="https://picsum.photos/205 " alt="Image" class="image">
+        <img src="https://picsum.photos/206 " alt="Image" class="image">
+        <img src="https://picsum.photos/207 " alt="Image" class="image">
+
+    </div>
+</body>
+
+</html>

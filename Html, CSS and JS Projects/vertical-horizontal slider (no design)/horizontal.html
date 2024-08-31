@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Sliderbar</title>
+</head>
+<style>
+    .sliderbar {
+        width: 500px;
+        max-width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: orange;
+        font-size: 30px;
+        margin: auto;
+    }
+
+    .sliderbar ul {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        overflow-x: scroll;
+    }
+
+    .sliderbar ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    .left-arr,
+    .right-arr {
+        font-size: 30px;
+        cursor: pointer;
+        user-select: none;
+    }
+</style>
+
+<body>
+    <div class="sliderbar">
+        <div class="left-arr">&lt;</div>
+        <ul class="list-container">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Git</li>
+            <li>Github</li>
+            <li>Nodejs</li>
+            <li>Mongodb</li>
+        </ul>
+        <div class="right-arr">&gt;</div>
+    </div>
+</body>
+<script>
+    const listContainer = document.querySelector(".list-container");
+    const leftArr = document.querySelector(".left-arr");
+    const rightArr = document.querySelector(".right-arr");
+
+
+    leftArr.addEventListener("click", () => {
+        listContainer.scrollLeft -= 200;
+    });
+
+    rightArr.addEventListener("click", () => {
+        listContainer.scrollLeft += 200;
+        console.log(listContainer.scrollLeft);
+
+    });
+</script>
+
+</html>

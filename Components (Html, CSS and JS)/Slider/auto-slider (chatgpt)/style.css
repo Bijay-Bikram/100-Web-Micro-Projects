@@ -1,0 +1,22 @@
+   .slider-container {
+       width: 80%;
+       margin: auto;
+       overflow: hidden;
+       position: relative;
+       border: 1px solid #ccc;
+   }
+
+   .slider-content {
+       display: flex;
+       transition: transform 0.5s ease;
+   }
+
+   .slide {
+       width: 100%;
+       flex: 0 0 auto;
+   }
+
+   img {
+       width: 100%;
+       height: 100%;
+   }

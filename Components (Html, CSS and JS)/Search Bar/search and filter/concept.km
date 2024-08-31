@@ -1,0 +1,38 @@
+{
+    "root": {
+        "data": {
+            "id": "d185ko0tbkw0",
+            "created": 1715566513167,
+            "text": "getItem()"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "d185l3yqqnc0",
+                    "created": 1715566547870,
+                    "text": "search input data",
+                    "layout_mind_offset": {
+                        "x": -85.99999871849997,
+                        "y": -167.99999749660492
+                    }
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "d185le4aqug0",
+                    "created": 1715566569974,
+                    "text": "Filter Categories",
+                    "layout_mind_offset": {
+                        "x": 15.999999761581478,
+                        "y": -147.99999779462826
+                    }
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

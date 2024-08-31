@@ -1,0 +1,77 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'poppins';
+ }
+
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background: #343F4F;
+ }
+
+ .wrapper {
+     display: inline-flex;
+     /* justify-content: center;
+     align-items: center; */
+ }
+
+ .wrapper .static-txt {
+     font-size: 60px;
+     color: #fff;
+     font-weight: 400;
+ }
+
+ .wrapper .dynamic-txts {
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+     margin-left: 14px;
+     height: 92px;
+     line-height: 90px;
+     /* background: red; */
+     overflow: hidden;
+ }
+
+ .dynamic-txts li {
+     list-style: none;
+     font-size: 60px;
+     font-weight: 400;
+     color: rgba(251, 58, 203, 0.464);
+     animation: slide 7.5s steps(5) infinite;
+     /* animation-play-state: paused; */
+     position: relative;
+     top: 0;
+ }
+
+ @keyframes slide {
+     100% {
+         top: -460px;
+     }
+ }
+
+ .dynamic-txts li span {
+     position: relative;
+ }
+
+ .dynamic-txts li span::after {
+     content: "";
+     position: absolute;
+     background: #343F4F;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     border-left: 2px solid rgba(251, 58, 203, 0.464);
+     animation: typing 1.5s steps(10) infinite;
+     /* animation-play-state: paused; */
+ }
+
+ @keyframes typing {
+     100% {
+         left: 100%;
+         margin: 0 -30px 0 35px;
+     }
+ }

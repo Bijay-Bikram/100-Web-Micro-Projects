@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .popup {
+        width: 15rem;
+        border: 2px solid lime;
+        border-radius: 10px;
+        background-color: rgba(44, 250, 78, 0.211);
+        position: fixed;
+        top: .5rem;
+        right: 1rem;
+        padding: 0rem 1rem .5rem;
+        font-family: sans-serif;
+    }
+
+    .detector {
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: .4em;
+    }
+
+    #mesg {
+        margin-left: 1rem;
+    }
+</style>
+
+<body>
+
+</body>
+
+<script>
+
+    // Functions
+    const onlinePopup = () => {
+        document.body.innerHTML = `<div class="popup">
+        <p class="detector"><span><img src="./img/online.svg" alt=""></span>Connection</p>
+        <div id="mesg">You are back Online</div>
+    </div> `
+    }
+
+    const offlinePopup = () => {
+        document.body.innerHTML = `<div class="popup">
+        <p class="detector"><span><img src="./img/offline.svg" alt=""></span>Connection error</p>
+        <div id="mesg">No Internet Connection</div>
+    </div> `
+    }
+
+
+    // Detectors
+    if (window.navigator.onLine) {
+        onlinePopup()
+    }
+    else {
+        offlinePopup()
+    }
+
+    window.addEventListener("online", onlinePopup)
+    window.addEventListener("offline", offlinePopup)
+
+</script>
+
+</html>

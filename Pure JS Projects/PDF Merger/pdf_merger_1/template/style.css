@@ -1,0 +1,17 @@
+body .container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+margin: 100px 200px;    
+background: rgba(255, 0, 0, 0.591);
+max-width: 500px;
+padding: 40px 30px;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+
+}
+.container form #submit{
+}

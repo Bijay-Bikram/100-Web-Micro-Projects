@@ -1,0 +1,1 @@
+1. We can customize modal easily, made with dialog tag

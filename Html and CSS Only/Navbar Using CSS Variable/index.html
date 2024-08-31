@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    :root {
+        --navcolor: rgba(166, 255, 0, 0.548);
+        --listcolor: rgb(47, 83, 228);
+        --listbg: rgb(251, 80, 80);
+    }
+
+    .navbar {
+        width: 100%;
+        background: var(--navcolor);
+
+    }
+
+    ul {
+        display: flex;
+        padding: 15px 25px;
+        margin-left: 60px;
+
+    }
+
+    ul li {
+        list-style: none;
+        padding: 10px 12px;
+    }
+
+    ul li a {
+        padding: 8px 13px;
+        text-decoration: none;
+        color: var(--listcolor);
+    }
+
+    li a:hover {
+        background: var(--listbg);
+        border-radius: 10px;
+        cursor: pointer;
+        --listcolor: wheat;
+        color: var(--listcolor);
+
+    }
+
+    ul img {
+        width: 30px;
+        margin: 0px 20px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <img src="https://www.freepnglogos.com/uploads/yankees-logo-png/new-york-logo-of-yankees-png-0.png"
+                alt="YAKI">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Blog</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

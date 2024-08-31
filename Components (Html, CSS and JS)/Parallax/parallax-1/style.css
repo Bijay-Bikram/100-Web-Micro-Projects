@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* distance away from the screen */
+    perspective: 10px;
+    /* Applies the same transform as the perspective(<number>) transform function,
+        except that it applies only to the positioned or transformed children of the element,
+        not to the transform on the element itself. */
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    /* Defines how nested elements are rendered in 3D space */
+    z-index: -1;
+    /* z-index: -1; To keep the background image behind the text. */
+}
+
+.background {
+    /* Away from the screen */
+    transform: translateZ(-11px)scale(2);
+}
+
+.foreground {
+    transform: translateZ(-5px)scale(1.5);
+}
+
+.background,
+.foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 0 0 5px black;
+}
+
+section {
+    font-size: 1.4rem;
+    padding: 2rem;
+    text-align: justify;
+    background-color: #333;
+    color: #fff;
+}

@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    gap: 5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh auto;
+    width: 200px;
+    /* background: aqua; */
+    padding: 4px;
+}
+
+.progress-bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.progress-bar input {
+    cursor: pointer;
+}
+
+.controls {
+    width: 100%;
+    background: gray;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    user-select: none;
+}
+
+.left-c {
+    display: flex;
+    gap: 10px;
+}
+
+.right-c span {
+    cursor: pointer;
+}
+
+.btn {
+    cursor: pointer;
+}

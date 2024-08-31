@@ -1,0 +1,43 @@
+Start
+|
+|--- Console.log("Running the script...")
+|
+|--- main()
+     |
+     |--- getSongs("songs/bossa")
+     |     |
+     |     |--- Fetch songs from specified folder
+     |
+     |--- displayAlbums()
+     |     |
+     |     |--- Fetch album information
+     |     |     |
+     |     |     |--- Create card for each album
+     |     |
+     |     |--- Add click event listener to each card
+     |
+     |--- playMusic(songs[0], true)
+     |     |
+     |     |--- Play the first song
+     |
+     |--- PreFolder(currFolder)
+     |     |
+     |     |--- Highlight current song in album
+     |
+     |--- AnotherMusic()
+     |     |
+     |     |--- Fetch another set of songs
+     |     |     |
+     |     |     |--- Add event listener for previous and next buttons
+     |
+     |--- Event listeners
+     |     |
+     |     |--- Timeupdate: Update UI elements with current time and duration
+     |     |
+     |     |--- Seekbar input: Update current song time based on seekbar position
+     |     |
+     |     |--- Play button click: Toggle play/pause state of current song
+     |     |
+     |     |--- Mute button click: Toggle volume on/off
+     |
+End

@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: whitesmoke;
+}
+
+/* Navigation Section */
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 78px;
+    background:#fe992f;
+
+}
+.navbar img{
+    height: 100px;
+}
+ul{
+    display: flex;
+    margin: 2px auto;
+    padding: 2px 0px;
+}
+ul li{
+    list-style: none;
+    margin: 4px 20px;
+    padding: 2px 18px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    border-bottom: 4px solid red;
+}
+#vline{
+    border: 1.5px solid grey;
+    height: 7vh;
+    margin: 10px;
+}
+
+/* Container Section */
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    position: absolute;
+    top: 36%;
+    
+}
+#para{
+    font-family: 'metadata';
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+}
+.container::before{
+content: "";
+background: url('bg3.jpg') no-repeat center center/cover;
+height: 100vh;
+width: 100%;
+position: absolute;
+top: 0;
+z-index: -1;
+}
+/* Button */
+#btn{
+    width: 4rem;
+    margin: 7px auto;
+    background: red;
+    color: antiquewhite;
+    cursor: pointer;
+}

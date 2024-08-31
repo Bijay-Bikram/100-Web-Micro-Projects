@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random numbers between two numbers</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    let max = prompt("Enter greatest numbers.")
+    max = Number.parseInt(max)
+    let min = prompt("Enter least numbers.")
+    min = Number.parseInt(min)
+
+    let r = min + (max - min) * Math.random();
+
+    alert(r)
+
+</script>

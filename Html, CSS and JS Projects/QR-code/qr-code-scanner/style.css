@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+}
+
+.wrapper {
+    height: 270px;
+    width: 420px;
+    border-radius: 7px;
+    background: #95c8ece7;
+    padding: 30px 30px 35px;
+    transition: height 0.2s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper.active {
+    height: 525px;
+}
+
+.wrapper form {
+    height: 210px;
+    cursor: pointer;
+    border-radius: 7px;
+    background: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.wrapper.active form {
+    height: 225px;
+    pointer-events: none;
+}
+
+form img {
+    max-width: 148px;
+    display: none;
+}
+
+.wrapper.active form img {
+    display: block;
+}
+
+.wrapper.active form .content {
+    display: none;
+}
+
+form .content i {
+    color: #37aafce7;
+    font-size: 55px;
+}
+
+form .content p {
+    color: #1689dbe7;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.wrapper .details {
+    margin-top: 25px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.wrapper.active .details {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.3s ease 0.3s;
+}
+
+.details textarea {
+    width: 100%;
+    min-height: 128px;
+    outline: none;
+    resize: none;
+    background: none;
+    color: #3b3b3b;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 1px solid #9e9b9b;
+}
+
+.details .buttons {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons button {
+    border: none;
+    height: 55px;
+    width: calc(100% / 2 - 10px);
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #37aafce7;
+    /* transition: 0.3s ease; */
+}
+
+.buttons button:hover {
+    background: #3b8efce7;
+}

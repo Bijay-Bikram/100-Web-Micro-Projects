@@ -1,0 +1,24 @@
+table,
+th,
+td {
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table {
+    width: 700px;
+    max-width: 80%;
+    margin: 3rem auto;
+    background-color: beige;
+}
+
+th {
+    background-color: rgb(211, 230, 175);
+}
+
+@media print {
+    button {
+        display: none;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate Image</title>
+</head>
+<style>
+    .container {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        margin: 20vh auto;
+        /* background-color: rgb(93, 88, 85); */
+    }
+
+    .box1 {
+        border: 50px solid transparent;
+        border-top-color: rgb(128, 55, 0);
+        border-bottom-color: rgb(128, 55, 0);
+    }
+
+    .box2 {
+        border: 50px solid transparent;
+        border-left-color: green;
+        border-right-color: green;
+        margin-left: 10px;
+    }
+
+    .container:hover :where(.box1) {
+        transform: translateX(6.85rem);
+        transition: all 0.5s ease-in-out;
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box1">
+        </div>
+        <div class="box2">
+        </div>
+    </div>
+</body>
+
+</html>

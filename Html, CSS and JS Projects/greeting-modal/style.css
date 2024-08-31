@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+:has(> .modal) {
+    width: 100vw;
+    height: 100vh;
+    container-name: modal;
+    container-type: inline-size;
+}
+
+.modal {
+    position: fixed;
+    width: 300px;
+    max-width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f6e7e7;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 1.4em 2em 1.5em;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.close {
+    position: absolute;
+    top: .2em;
+    right: .6em;
+    cursor: pointer;
+}
+
+#greeting {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 2.5rem;
+}
+
+@container modal (width < 300px) {
+    #greeting {
+        font-size: calc(1.3em - 2cqw);
+    }
+}
+
+.showModal {
+    padding: 12px 14px;
+    border: 2px solid rgb(40, 40, 255);
+    outline: none;
+    border-radius: 10px;
+    background: transparent;
+    margin: 10px 20px;
+    font-weight: bold;
+}

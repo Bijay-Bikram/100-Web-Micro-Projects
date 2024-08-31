@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="dropDown " data-dropdown>
+            <button class="link" data-dropdown-btn>Information</button>
+            <div class="dropDown-menu information-grid">
+                <div>
+                    <div class="dropDown-heading">Free Tutorials</div>
+                    <div class="dropDown-links">
+                        <a href="#" class="link">All</a>
+                        <a href="#" class="link">Latest</a>
+                        <a href="#" class="link">Popular</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="dropDown-heading">Courses</div>
+                    <div class="dropDown-links">
+                        <a href="#" class="link">All</a>
+                        <a href="#" class="link">JavaScript</a>
+                        <a href="#" class="link">React</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="dropDown-heading">Blog</div>
+                    <div class="dropDown-links">
+                        <a href="#" class="link">All</a>
+                        <a href="#" class="link">Latest</a>
+                        <a href="#" class="link">Popular</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="dropDown-heading">Others</div>
+                    <div class="dropDown-links">
+                        <a href="#" class="link">All</a>
+                        <a href="#" class="link">Latest</a>
+                        <a href="#" class="link">Popular</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="link">Pricing</a>
+        <div class="dropDown" data-dropdown>
+            <button class="link" data-dropdown-btn>Login</button>
+            <div class="dropDown-menu">
+                <form class="login-form">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                    <input type="button" value="Login">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

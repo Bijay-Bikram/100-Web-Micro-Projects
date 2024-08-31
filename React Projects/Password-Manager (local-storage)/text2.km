@@ -1,0 +1,14 @@
+{
+    "root": {
+        "data": {
+            "id": "d0770mwyygw0",
+            "created": 1711812867298,
+            "text": "pwManager",
+            "progress": 5
+        },
+        "children": []
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.scrollable-tab-container {
+    font-family: 'Times New Roman', Times, serif;
+    background: #000;
+    width: 700px;
+    max-width: 95%;
+    margin: 16px auto;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrollable-tab-container svg {
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: auto;
+}
+
+.scrollable-tab-container svg:hover {
+    background-color: #333;
+}
+
+.scrollable-tab-container ul {
+    display: flex;
+    gap: 1rem;
+    padding: 14px 24px;
+    list-style: none;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.scrollable-tab-container ul.dragging {
+    scroll-behavior: auto;
+}
+
+.scrollable-tab-container ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    background: #333;
+    padding: 4px 24px;
+    user-select: none;
+    /* this will prevent text from wrapping */
+    white-space: nowrap;
+    border-radius: 6px;
+}
+
+.scrollable-tab-container a.active {
+    background: #fff;
+    color: #000
+}
+
+.scrollable-tab-container :where(.left-arrow, .right-arrow) {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    display: none;
+    pointer-events: none;
+}
+
+/* Note: a.active and left-arrow.active are different */
+.scrollable-tab-container :where(.left-arrow.active, .right-arrow.active) {
+    display: flex;
+}
+
+.scrollable-tab-container .right-arrow {
+    right: 0;
+    background: linear-gradient(to left, #000 40%, transparent);
+    /* Move content to right */
+    justify-content: flex-end;
+}
+
+.scrollable-tab-container .left-arrow {
+    left: 0;
+    background: linear-gradient(to right, #000 40%, transparent);
+    /* Move content to right */
+    justify-content: flex-start;
+}

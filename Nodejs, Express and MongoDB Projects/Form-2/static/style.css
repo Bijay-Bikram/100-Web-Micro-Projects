@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    /* position: absolute;
+    top: 40%;
+    right: 20%; */
+    margin-top: 80px;
+    width: 40%;
+    text-align: center;
+    background: rgb(247, 245, 237);
+}
+
+input,
+textarea {
+    display: block;
+    width: 50%;
+    margin: 5px auto;
+}
+
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

@@ -1,0 +1,25 @@
+doctype html 
+html 
+  head 
+    block style 
+    block scripts
+  body
+    nav#navbar
+      div#logo
+        img(src="../static/logo.png", alt)
+        p SDA
+      ul
+        li
+          a(href="/") Home
+        li
+          a(href="/") Service
+        li
+          a(href="/") Class info
+        li
+          a(href="/") About
+        li
+          a(href="/contact") Contact
+    block content
+    block foot
+      #footer
+        p#cr Copyright © 2023 SoloDanceAcademy.com All right | reserve

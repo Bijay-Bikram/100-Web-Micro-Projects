@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 .5rem;
+}
+
+.search-wrapper {
+    width: 600px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    padding: 10px;
+}
+
+.search-wrapper input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.user-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: .28rem;
+    margin-top: 1.8rem;
+}
+
+.card {
+    border: 1px solid black;
+    padding: .5rem;
+}
+
+.card>.header {
+    margin-bottom: .25rem;
+}
+
+.card>.body {
+    font-size: 1rem;
+    color: #666;
+}
+
+.hide {
+    display: none;
+}

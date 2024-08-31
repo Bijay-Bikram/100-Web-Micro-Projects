@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Blure</title>
+</head>
+<style>
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media screen and (max-width: 600px) {
+        .grid {
+            grid-template-columns: 1fr 1fr;
+        }
+
+    }
+
+    img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        display: block;
+        /* object-fit: cover; */
+        object-position: center;
+    }
+
+
+    .blur-load {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .blur-load>img {
+        opacity: 0;
+        transition: opacity 200ms ease-in-out;
+    }
+
+    .blur-load.loaded>img {
+        opacity: 1;
+    }
+
+
+    .blur-load::before {
+        position: absolute;
+        content: "";
+        /* similar to margin:0; */
+        inset: 0;
+        animation: pulse 2s infinite;
+    }
+
+    .blur-load.loaded::before {
+        content: none;
+    }
+
+    @keyframes pulse {
+        0% {
+            background-color: rgba(255, 255, 255, 0);
+
+        }
+
+        50% {
+            background-color: rgba(255, 255, 255, 0.12);
+
+        }
+
+        100% {
+            background-color: rgba(255, 255, 255, 0);
+
+        }
+    }
+</style>
+
+<body style="box-sizing: border-box;">
+    <div class="grid">
+        <div class="blur-load" style="background-image: url('./blur/img1-blur.jpg');">
+            <img src="./images/img1.jpg" alt="" loading="lazy">
+        </div>
+
+        <div class="blur-load" style="background-image: url('./blur/img2-blur.jpg');">
+            <img src="./images/img2.jpg" alt="" loading="lazy">
+        </div>
+
+        <div class="blur-load" style="background-image: url('./blur/img3-blur.jpg');">
+            <img src="./images/img3.webp" alt="" loading="lazy">
+        </div>
+
+        <div class="blur-load" style="background-image: url('./blur/img4-blur.jpg');">
+            <img src="./images/img4.jpg" alt="" loading="lazy">
+        </div>
+
+        <div class="blur-load" style="background-image: url('./blur/img5-blur.jpg');">
+            <img src="./images/img5.jpg" alt="" loading="lazy">
+        </div>
+
+        <div class="blur-load" style="background-image: url('./blur/img6-blur.jpg');">
+            <img src="./images/img6.jpg" alt="" loading="lazy">
+        </div>
+
+        <div class="blur-load" style="background-image: url('./blur/img7-blur.png');">
+            <img src="./images/img7.png" alt="" loading="lazy">
+        </div>
+
+        <div class="blur-load" style="background-image: url('./blur/img8-blur.png');">
+            <img src="./images/img8.jpg" alt="" loading="lazy">
+        </div>
+    </div>
+</body>
+<script>
+    //Hints: If the image is loaded, show the image. If the image is not loaded, add an event listener to the image that will show the image when it is loaded.
+
+    const blurDiv = document.querySelectorAll('.blur-load');
+    blurDiv.forEach(div => {
+        const img = div.querySelector('img');
+
+        function loaded() {//show img
+            div.classList.add('loaded');
+        }
+
+        if (img.complete) {
+            loaded();
+        } else {
+            img.addEventListener('load', loaded);
+        }
+    })  
+</script>
+
+</html>
+
+<!-- conclusion: Before the orginal img is loaded it will insert duplicate of orginal img (low quality img with low size) and hide the orginal img, When the img is loaded complete then it will show the orginal img -->

@@ -1,0 +1,37 @@
+ * {
+     font-family: sans-serif;
+ }
+
+ .container {
+     display: flex;
+     border: 2px solid red;
+     gap: 12px;
+ }
+
+ .imgsec {
+     display: flex;
+     width: 18vw;
+     position: relative;
+ }
+
+ .imgsec img {
+     width: 100%;
+     border-radius: 6px;
+ }
+
+ .imgsec span {
+     position: absolute;
+     background: black;
+     bottom: 0;
+     right: 0;
+     color: white;
+     z-index: 10;
+     margin: 10px;
+     padding: 2px 7px;
+     border-radius: 6px;
+ }
+
+ .infosec .details {
+     font-size: 14px;
+ }
+

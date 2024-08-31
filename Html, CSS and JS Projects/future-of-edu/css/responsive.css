@@ -1,0 +1,61 @@
+@media screen and (max-width:1040px) {
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        transition: all 0.3s ease-out;
+        height: 450px;
+    }
+
+    .rightNav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav-resp {
+        height: 72px;
+    }
+
+    .v-class-resp {
+        display: none;
+    }
+
+    .box-main {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    .section {
+        flex-direction: column-reverse;
+    }
+
+    .buttons,
+    .text-small,
+    .text-big {
+        text-align: center;
+    }
+
+    .text-footer {
+        padding: 30px 5px;
+    }
+
+    .para {
+        padding: 0px;
+    }
+
+    .dark-bg {
+        background: rgba(0, 0, 0, 0.788);
+    }
+
+}

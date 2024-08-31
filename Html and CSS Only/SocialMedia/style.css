@@ -1,0 +1,90 @@
+body{
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Profile styling */
+#profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: pink;
+    gap: 1rem;
+    width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+/* Profile section */
+#profileinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-top: 1.8rem;
+}
+#profileinfo>span:nth-of-type(1){
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+#profileinfo>span:nth-of-type(2){
+    text-align: center;
+}
+/* Following Section */
+#followinginfo{
+    display: flex;
+    gap: 8rem;
+
+}
+span{
+    display: flex;
+    flex-direction: column;
+
+}
+/* Vertical and Horizontal lines */
+.vl{
+    height: 60px;
+    border: 1px solid grey;
+
+}
+hr{
+    width: 750px;
+    border: 1px solid grey;
+    
+}
+/* image styling */
+#image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+    ;
+}
+#image>img:nth-of-type(1){
+width: 800px;
+}
+#image>img:nth-of-type(2){
+    width: 10%;
+    height: 20%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+
+
+}
+/* Span styling  in Followers Section*/
+.Following>span:nth-of-type(1){
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.Followers>span:nth-of-type(1){
+    text-align: center;
+font-weight: bold;
+font-size: 1.5rem;
+}
+.Post>span:nth-of-type(1){
+    text-align: center;
+font-weight: bold;
+font-size: 1.5rem;
+}

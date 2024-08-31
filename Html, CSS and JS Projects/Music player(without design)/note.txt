@@ -1,0 +1,1 @@
+In progressBar, we use simple concept of discount% and discount-amt

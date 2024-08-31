@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!-- Easy way to create modal using dialog tag -->
+
+    <button data-modal-btn style="cursor: pointer;">Click here</button>
+
+    <dialog data-modal>
+        <h1>My First Web Page</h1>
+        <p>My first paragraph.</p>
+        <show id="show"></show>
+        <button id="btn">OK</button>
+    </dialog>
+
+</body>
+<script>
+    // Show
+    document.querySelector('[data-modal-btn]').addEventListener('click', () => {
+        document.querySelector('[data-modal]').showModal()
+    })
+
+    // Close
+    document.querySelector('#btn').addEventListener('click', () => {
+        document.querySelector('[data-modal]').close()
+    })
+</script>
+
+
+</html>

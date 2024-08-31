@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes for Happiness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Section -->
+    <nav class="navbar">
+        <img src="logo.png" alt="Logo"><span>
+            <h2>FunnyWorld</h2>
+        </span>
+        <div id="vline"></div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Service</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Blog</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <!-- Container Section -->
+    <div class="container">
+        <div id="text">
+            <p id="para"></p>
+            <button id="btn" onclick="next()">Next</button>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+<script>
+    function next() {
+        window.location.reload();
+    }
+</script>
+
+</html>

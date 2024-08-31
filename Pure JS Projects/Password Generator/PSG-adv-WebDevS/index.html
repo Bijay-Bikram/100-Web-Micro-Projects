@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSG by webDev Simplify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Password Generator</h1>
+        <h2 class="password-display" id="passwordDisplay">Password</h2>
+
+        <form id="passwordGeneratorForm" >
+            <label for="characterAmountNumber">Number of Character</label>
+            <div id="amount-container">
+                <input type="range" min="1" max="50" id="characterAmountRange">
+                <input class="number-input" type="number"  min="1" max="50" id="characterAmountNumber" value="10">
+            </div>
+
+            <label for="uppercase">Include Uppercase</label>
+            <input type="checkbox" id="uppercase">
+
+            <label for="numbers">Include Number</label>
+            <input type="checkbox" id="numbers">
+
+            <label for="symbols">Include Symbol</label>
+            <input type="checkbox" id="symbols">
+
+            <button class="btn" type="submit">Generate Password</button>
+        </form>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

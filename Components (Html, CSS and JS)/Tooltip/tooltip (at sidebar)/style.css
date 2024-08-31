@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(196, 50, 50);
+}
+
+aside {
+    background: white;
+    width: max-content;
+    height: 100vh;
+    padding: 15px;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+ul li {
+    list-style: none;
+}
+
+.tooltips {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltips::after {
+    --scale: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(70%) scale(var(--scale));
+    transform-origin: left;
+    white-space: nowrap;
+    transition: 150ms all ease-in;
+}
+
+.tooltips::after {
+    content: attr(data-tooltip);
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.tooltips:hover::after {
+    --scale: 1;
+}

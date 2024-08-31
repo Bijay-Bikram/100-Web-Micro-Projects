@@ -1,0 +1,22 @@
+{
+    "root": {
+        "name": "pwManager client side",
+        "style": {},
+        "children": {
+            "right": [
+                {
+                    "name": "Unnamed element",
+                    "style": {}
+                },
+                {
+                    "name": "Module",
+                    "style": {}
+                },
+                {
+                    "name": "Unnamed element",
+                    "style": {}
+                }
+            ]
+        }
+    }
+}

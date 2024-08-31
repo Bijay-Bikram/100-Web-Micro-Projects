@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator by GreatStack</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Random Password</h2>
+        <h2>Generator</h2>
+        <div class="Display">
+            <input type="text" id="password" placeholder="Password">
+            <img src="copy.png" onclick="copyPassword()" alt="">
+        </div>
+        <button onclick="createpassword()"><img src="generate.png"  alt="">Generate Password</button>
+    </div>
+</body>
+
+<script>
+    const password = document.getElementById("password")
+    len = 15;
+
+    const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    const lowercase = "abcdefghijklmnopqrstuvwxyz"
+    const no = "1234567890"
+    const symbol = "~!@#$%&*()=-[]"
+    const allChar = uppercase + lowercase + no + symbol;
+
+    const createpassword = () => {
+        let Password = ""
+        Password += uppercase[Math.floor(Math.random() * uppercase.length)]
+        Password += lowercase[Math.floor(Math.random() * lowercase.length)]
+        Password += no[Math.floor(Math.random() * no.length)]
+        Password += symbol[Math.floor(Math.random() * symbol.length)]
+
+        while (Password.length < len) {
+            Password += allChar[Math.floor(Math.random() * allChar.length)]
+
+        }
+        password.value = Password;
+    }
+    function copyPassword(){
+        password.select()
+        document.execCommand("copy");
+
+    }
+</script>
+
+</html>
